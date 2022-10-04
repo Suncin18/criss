@@ -76,16 +76,16 @@
                 <form action="">
                     <h2>¡No esperes más! ¡Escribenos y te asesoramos!</h2>
                     <div class="contact_input_container">
-                        <input type="text" placeholder="Nombre">
-                        <input type="text" placeholder="Correo">
+                        <input type="text" placeholder="Nombre" id="iNombre" required>
+                        <input type="email" placeholder="Correo" id="iCorreo" required>
                     </div>
                     <div class="contact_input_container">
-                        <input type="text" placeholder="Asunto">
-                        <input type="text" placeholder="Teléfono">
+                        <input type="text" placeholder="Asunto" id="iAsunto" required>
+                        <input type="text" placeholder="Teléfono" id="iTelefono" required>
                     </div>
-                    <textarea name="" id="" cols="30" rows="3" placeholder="Detalla tu mensaje..."></textarea>
+                    <textarea name="" id="iMensaje" cols="30" rows="3" placeholder="Detalla tu mensaje..." required></textarea>
                     <div class="contact_btn_container">
-                        <button>Enviar</button>
+                        <button type="button" id="btn-contactForm">Enviar</button>
                     </div>
                 </form>
             </div>
@@ -105,5 +105,7 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/e7042e64a4.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/contact.js"></script>
 </body>
 </html>
